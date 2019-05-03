@@ -1,0 +1,11 @@
+pyseer --phenotypes resistances.pheno --pres gene_presence_absence.Rtab --distances mash.tsv --save-m mash_mds --max-dimensions 12 > antibiotics_COGs.txt
+/home/enaziga/anaconda3/lib/python3.6/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Read 277 phenotypes
+Detected binary phenotype
+Structure matrix has dimension (277, 277)
+Analysing 277 samples found in both phenotype and structure matrix
+15878 loaded variants
+5897 filtered variants
+9981 tested variants
+9970 printed variants

@@ -1,0 +1,56 @@
+REF_FILE = /scratch/d/dguttman/emmanuel/test_snpcalling_pipeline/references/pao1.fa 
+ID_LIST_FILE = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/combined_strain_list_file.txt
+ALIGNER = BWA
+
+INPUT_DIR = /scratch/d/dguttman/emmanuel/reproduce_analysis/5.align_to_good_contigs_Reference_Mapping/sequence_reads_after_align_to_good_contigs/combined_set/
+ALIGNMENT_DIR = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/
+JOBS_DIR = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/analysis/combined/jobfiles/
+INCLUDE_QUAKE = FLASE
+INCLUDE_BWA = TRUE
+INCLUDE_LAST = TRUE
+INCLUDE_NOVOALIGN = TRUE
+INCLUDE_BOWTIE2 = FALSE
+BWA_REF = /scratch/d/dguttman/emmanuel/test_snpcalling_pipeline/references/pao1.fa
+NOVOALIGN_REF = /scratch/d/dguttman/emmanuel/test_snpcalling_pipeline/references/pao1_NOVOALIGN
+LAST_REF = /scratch/d/dguttman/emmanuel/test_snpcalling_pipeline/references/pao1_LAST
+BOWTIE_REF = 
+BWA_PATH = /home/d/dguttman/diazcaba/Software/bwa-0.7.17
+LAST_PATH = /home/d/dguttman/diazcaba/Software/last-926
+NOVOALIGN_PATH = /home/d/dguttman/diazcaba/Software/novocraft-3.08.02
+SAMTOOLS_PATH = /home/d/dguttman/diazcaba/Software/samtools-1.8
+BCFTOOLS_PATH = /home/d/dguttman/diazcaba/Software/bcftools-1.8 
+
+# Settings for gethqsnps
+HQ_SNP_LIST_OUTPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/HQ_SNPs_List.txt 
+HQ_SNP_WORKING_DIR = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/
+HQ_SNP_QUALITY = 30
+HQ_SNP_DEPTH = 20
+HQ_SNP_DIST_TO_CONTIG_END = 150
+HQ_SNP_READ_BALANCE = 3
+HQ_SNP_REF_TO_ALT_BALANCE = 0.2
+HQ_SNP_CLUSTER_SIZE = 15
+HQ_SNP_REQUIRED_NUM = 3
+INCLUDE_PRE_QC = FALSE
+
+# Settings for getintraclonalsnps
+INTRA_SNP_INPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/HQ_SNPs_List.txt
+INTRA_SNP_WORKING_DIR = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/
+INTRA_SNP_OUTPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/intraclonal_snps_list.txt
+
+# Settings for snpchecker
+SNP_CHECKER_INPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/intraclonal_snps_list.txt
+SNP_CHECKER_WORKING_DIR = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/
+SNP_CHECKER_OUTPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/snpchecker_out.txt
+
+# Settings for snpfilter
+SNP_FILTER_INPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/snpchecker_out.txt
+SNP_FILTER_OUTPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/SNP_snpfilter_out.txt
+SNP_FILTER_MIN_GOOD_BALANCE = 1
+SNP_FILTER_MIN_GOOD_CALL_RATIO = 0.8
+SNP_FILTER_MIN_GOOD_QUALITY = 20
+
+# Settings for createalignment
+CREATE_ALIGN_INPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/SNP_snpfilter_out.txt 
+CREATE_ALIGN_OUTPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/snp_alignment.fa
+CREATE_ALIGN_LIST_OUTPUT = /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/final_snp_list.txt
+

@@ -1,0 +1,2 @@
+cat <(echo "#CHR SNP BP minLOG10(P) log10(p) r^2") <(paste <(sed '1d' antibiotics_COGs.txt | cut -d "" -f 2) <(sed '1d' antibiotics_COGs.txt | cut -f 4) | awk '{p = -log($2)/log(10); print "NC_002516.2",".",$1,p,p,"0"}' ) | tr ' ' '\t' > antibiotics_COGs.plot
+

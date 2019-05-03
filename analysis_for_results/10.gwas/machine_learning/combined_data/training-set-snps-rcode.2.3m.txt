@@ -1,0 +1,23 @@
+library(treeWAS)
+setwd("/home/conrad/Data/pseudo-partitions/L9-treewas/snps/")
+
+# Load phenotypes:
+training.phe <- read.table("/home/conrad/Data/pseudo-partitions/training-set-pheno.treewas", row.names=1, header=FALSE)
+training.phe.vector <- as.vector(unlist(training.phe[1]))
+names(training.phe.vector) <- rownames(training.phe)
+
+# Load phylogenetic trees:
+library(ape)
+
+training.tree <- read.tree(file="/home/conrad/Data/pseudo-partitions/L3-iqtree/training-set-iqtree/training_snp_alignment_no_ref.fa.contree")
+
+# Load SNPs:
+
+training.snps <- read.table("/home/conrad/Data/pseudo-partitions/L7-gwas-files/snps/training-set_binary_matrix.txt", header=TRUE, row.names=1)
+
+# Run treeWAS:
+
+##training.snps.treewas <-  treeWAS(snps=training.snps, phen=training.phe.vector, tree=training.tree, p.value=0.05, filename.plot = "training.snps.plots.pdf", seed=42, n.snps.sim=10*ncol(training.snps))
+
+training.snps.treewas.2m <-  treeWAS(snps=training.snps, phen=training.phe.vector, tree=training.tree, p.value=0.05, filename.plot = "training.snps.plots.pdf", seed=42, n.snps.sim=50*ncol(training.snps), p.value.correct='false')
+

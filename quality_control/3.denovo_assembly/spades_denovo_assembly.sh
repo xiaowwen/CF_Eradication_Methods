@@ -1,0 +1,1 @@
+/home/d/dguttman/emmanuel/Software/SPAdes-3.13.0-Linux/bin/spades.py -o 1012_180321 -1 /scratch/d/dguttman/emmanuel/reproduce_analysis/2.read_trimming/testing_set/1012_180321_1P.fq.gz -2 /scratch/d/dguttman/emmanuel/reproduce_analysis/2.read_trimming/testing_set/1012_180321_2P.fq.gz --careful 

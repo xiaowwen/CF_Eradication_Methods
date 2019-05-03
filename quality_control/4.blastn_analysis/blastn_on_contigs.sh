@@ -1,0 +1,1 @@
+blastn_exe -db nt -query /scratch/d/dguttman/emmanuel/reproduce_analysis/3.denovo_assembly/448_170512/contigs.fasta -out 448_170512/448_170512_blastn_results.txt -evalue 0.00001 -outfmt "7 qseqid sseqid pident length evalue sscinames" -num_threads 20

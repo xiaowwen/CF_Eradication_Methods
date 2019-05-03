@@ -1,0 +1,340 @@
+SNP Calling Pipeline v. 1.12t
+Questions? julio.diaz@mail.utoronto.ca
+
+Usage:	java -jar SNPCallingPipeline ANALYSIS_NAME [config file]
+
+Starting Create_Alignment analysis.
+1. Retrieving SNP calls
+2. Collecting reference sequence
+3. Recording SNP alignment in: /scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/analysis/alignments/snp_alignment.fa
+	Writing:	pao1578160902
+	Writing:	pao11139180321
+	Writing:	pao1395170512
+	Writing:	pao11121180321
+	Writing:	pao1974180321
+	Writing:	pao11068180321
+	Writing:	pao1510160902
+	Writing:	pao1472160902
+	Writing:	pao11064180321
+	Writing:	pao1379160902
+	Writing:	pao11021180321
+	Writing:	pao1288160902
+	Writing:	pao1571160902
+	Writing:	pao1455160902
+	Writing:	pao1511160902
+	Writing:	pao1448170512
+	Writing:	pao1270160902
+	Writing:	pao1508160902
+	Writing:	pao1323160902
+	Writing:	pao11080180321
+	Writing:	pao1527160902
+	Writing:	pao1130170512
+	Writing:	pao11013180321
+	Writing:	pao11043180321
+	Writing:	pao11086180321
+	Writing:	pao1818180321
+	Writing:	pao1388170512
+	Writing:	pao1539160902
+	Writing:	pao1303160902
+	Writing:	pao1341160902
+	Writing:	pao151170512
+	Writing:	pao1428170512
+	Writing:	pao1649180321
+	Writing:	pao11075180321
+	Writing:	pao1427170512
+	Writing:	pao1653180321
+	Writing:	pao1306160902
+	Writing:	pao11056180321
+	Writing:	pao1290160902
+	Writing:	pao1258160902
+	Writing:	pao1650180321
+	Writing:	pao11122180321
+	Writing:	pao1640180321
+	Writing:	pao11023180321
+	Writing:	pao1521160902
+	Writing:	pao11069180321
+	Writing:	pao1541160902
+	Writing:	pao1814180321
+	Writing:	pao1315160902
+	Writing:	pao1446160902
+	Writing:	pao11051180321
+	Writing:	pao1554180321
+	Writing:	pao1483170512
+	Writing:	pao1330160902
+	Writing:	pao110160902
+	Writing:	pao17160902
+	Writing:	pao11088180321
+	Writing:	pao1504160902
+	Writing:	pao117160902
+	Writing:	pao1310160902
+	Writing:	pao1788180321
+	Writing:	pao1771180321
+	Writing:	pao1552160902
+	Writing:	pao1459160902
+	Writing:	pao11040180321
+	Writing:	pao11198180321
+	Writing:	pao1644180321
+	Writing:	pao11115180321
+	Writing:	pao1634180321
+	Writing:	pao1693180321
+	Writing:	pao11015180321
+	Writing:	pao11084180321
+	Writing:	pao1318160902
+	Writing:	pao1817180321
+	Writing:	pao11201180321
+	Writing:	pao11014180321
+	Writing:	pao1259160902
+	Writing:	pao1696180321
+	Writing:	pao11042180321
+	Writing:	pao1831180321
+	Writing:	pao1385170512
+	Writing:	pao1257160902
+	Writing:	pao150170512
+	Writing:	pao1844180321
+	Writing:	pao11120180321
+	Writing:	pao1410160902
+	Writing:	pao144170512
+	Writing:	pao1265160902
+	Writing:	pao1648180321
+	Writing:	pao1668180321
+	Writing:	pao1501170512
+	Writing:	pao1568160902
+	Writing:	pao145170512
+	Writing:	pao11144180321
+	Writing:	pao1972180321
+	Writing:	pao1513160902
+	Writing:	pao11032180321
+	Writing:	pao1645180321
+	Writing:	pao1367160902
+	Writing:	pao1476160902
+	Writing:	pao1336160902
+	Writing:	pao1739180321
+	Writing:	pao1325160902
+	Writing:	pao1393170512
+	Writing:	pao1673180321
+	Writing:	pao1738180321
+	Writing:	pao1741180321
+	Writing:	pao18160902
+	Writing:	pao19999160902
+	Writing:	pao1404160902
+	Writing:	pao1293160902
+	Writing:	pao1740180321
+	Writing:	pao1737180321
+	Writing:	pao1196160902
+	Writing:	pao1843180321
+	Writing:	pao137170512
+	Writing:	pao1827180321
+	Writing:	pao1327160902
+	Writing:	pao1769180321
+	Writing:	pao1360160902
+	Writing:	pao1392160902
+	Writing:	pao1559160902
+	Writing:	pao1430160902
+	Writing:	pao1429170512
+	Writing:	pao1821180321
+	Writing:	pao1828180321
+	Writing:	pao1691180321
+	Writing:	pao1815180321
+	Writing:	pao1401160902
+	Writing:	pao11079180321
+	Writing:	pao1217160902
+	Writing:	pao130170512
+	Writing:	pao1670180321
+	Writing:	pao11062180321
+	Writing:	pao1991180321
+	Writing:	pao1342160902
+	Writing:	pao1569160902
+	Writing:	pao1331160902
+	Writing:	pao1971180321
+	Writing:	pao1447170512
+	Writing:	pao11063180321
+	Writing:	pao11138180321
+	Writing:	pao1332160902
+	Writing:	pao1465170512
+	Writing:	pao11055180321
+	Writing:	pao11024180321
+	Writing:	pao1280160902
+	Writing:	pao11081180321
+	Writing:	pao1250170512
+	Writing:	pao11067180321
+	Writing:	pao1572160902
+	Writing:	pao1503160902
+	Writing:	pao11136180321
+	Writing:	pao1987180321
+	Writing:	pao1282160902
+	Writing:	pao1583160902
+	Writing:	pao11073180321
+	Writing:	pao1842180321
+	Writing:	pao11195180321
+	Writing:	pao11112180321
+	Writing:	pao1419160902
+	Writing:	pao1251160902
+	Writing:	pao11031180321
+	Writing:	pao153170512
+	Writing:	pao1642180321
+	Writing:	pao1200160902
+	Writing:	pao1412170512
+	Writing:	pao123170512
+	Writing:	pao11114180321
+	Writing:	pao1692180321
+	Writing:	pao11071180321
+	Writing:	pao1358160902
+	Writing:	pao1580160902
+	Writing:	pao1641180321
+	Writing:	pao1509160902
+	Writing:	pao136170512
+	Writing:	pao1380160902
+	Writing:	pao1390170512
+	Writing:	pao11110180321
+	Writing:	pao1575160902
+	Writing:	pao1391170512
+	Writing:	pao11096180321
+	Writing:	pao1785180321
+	Writing:	pao11190180321
+	Writing:	pao11074180321
+	Writing:	pao1514160902
+	Writing:	pao11191180321
+	Writing:	pao1835180321
+	Writing:	pao119170512
+	Writing:	pao121170512
+	Writing:	pao11053180321
+	Writing:	pao11200180321
+	Writing:	pao1359160902
+	Writing:	pao1431170512
+	Writing:	pao1565180321
+	Writing:	pao1480160902
+	Writing:	pao1978180321
+	Writing:	pao1505160902
+	Writing:	pao1553160902
+	Writing:	pao1994180321
+	Writing:	pao1669180321
+	Writing:	pao1558180321
+	Writing:	pao11142180321
+	Writing:	pao1674180321
+	Writing:	pao1453160902
+	Writing:	pao1411160902
+	Writing:	pao1326160902
+	Writing:	pao1979180321
+	Writing:	pao11197180321
+	Writing:	pao1837180321
+	Writing:	pao1225160902
+	Writing:	pao1999160902
+	Writing:	pao1540160902
+	Writing:	pao1562160902
+	Writing:	pao138170512
+	Writing:	pao11041180321
+	Writing:	pao1836180321
+	Writing:	pao11045180321
+	Writing:	pao1770180321
+	Writing:	pao11022180321
+	Writing:	pao152170512
+	Writing:	pao1298160902
+	Writing:	pao1479160902
+	Writing:	pao11029180321
+	Writing:	pao11020180321
+	Writing:	pao1235160902
+	Writing:	pao1787180321
+	Writing:	pao1512160902
+	Writing:	pao1337160902
+	Writing:	pao197170512
+	Writing:	pao1789180321
+	Writing:	pao1646180321
+	Writing:	pao11109180321
+	Writing:	pao1563160902
+	Writing:	pao1667180321
+	Writing:	pao1369160902
+	Writing:	pao1275160902
+	Writing:	pao11034180321
+	Writing:	pao1487170512
+	Writing:	pao1402170512
+	Writing:	pao1406160902
+	Writing:	pao11188180321
+	Writing:	pao1736180321
+	Writing:	pao11090180321
+	Writing:	pao1273160902
+	Writing:	pao126170512
+	Writing:	pao1304180321
+	Writing:	pao1833180321
+	Writing:	pao1777180321
+	Writing:	pao11108180321
+	Writing:	pao11095180321
+	Writing:	pao1507160902
+	Writing:	pao1152160902
+	Writing:	pao11143180321
+	Writing:	pao1418160902
+	Writing:	pao11083180321
+	Writing:	pao1405160902
+	Writing:	pao1977180321
+	Writing:	pao11033180321
+	Writing:	pao1420160902
+	Writing:	pao1506160902
+	Writing:	pao11119180321
+	Writing:	pao1366160902
+	Writing:	pao11070180321
+	Writing:	pao1160160902
+	Writing:	pao11076180321
+	Writing:	pao1784180321
+	Writing:	pao11046180321
+	Writing:	pao1570160902
+	Writing:	pao139160902
+	Writing:	pao1567160902
+	Writing:	pao1433160902
+	Writing:	pao11066180321
+	Writing:	pao1475160902
+	Writing:	pao1832180321
+	Writing:	pao1695180321
+	Writing:	pao1544160902
+	Writing:	pao11050180321
+	Writing:	pao11199180321
+	Writing:	pao1432170512
+	Writing:	pao1417160902
+	Writing:	pao114160902
+	Writing:	pao1551170512
+	Writing:	pao11030180321
+	Writing:	pao1335160902
+	Writing:	pao1579180321
+	Writing:	pao11039180321
+	Writing:	pao1973180321
+	Writing:	pao11094180321
+	Writing:	pao1276160902
+	Writing:	pao1976180321
+	Writing:	pao1502160902
+	Writing:	pao1635180321
+slurmstepd: error: *** JOB 1093065 ON nia0188 CANCELLED AT 2019-03-31T20:12:34 DUE TO TIME LIMIT ***
+
+scontrol show jobid 1093065
+JobId=1093065 JobName=jSNPCalling
+   UserId=emmanuel(3002257) GroupId=dguttman(6002496) MCS_label=N/A
+   Priority=2022718 Nice=0 Account=rrg-dguttman QOS=normal
+   JobState=COMPLETING Reason=TimeLimit Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:15
+   RunTime=1-00:00:05 TimeLimit=1-00:00:00 TimeMin=N/A
+   SubmitTime=2019-03-30T20:12:29 EligibleTime=2019-03-30T20:12:29
+   StartTime=2019-03-30T20:12:29 EndTime=2019-03-31T20:12:34 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   LastSchedEval=2019-03-30T20:12:29
+   Partition=compute AllocNode:Sid=nia-login03:326227
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia0188
+   BatchHost=nia0188
+   NumNodes=1 NumCPUs=80 NumTasks=1 CPUs/Task=40 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=80,node=1,billing=40
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   Gres=(null) Reservation=(null)
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/run_snpcalling_java.sh
+   WorkDir=/gpfs/fs0/scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined
+   StdErr=/gpfs/fs0/scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/jSNPCalling_outlog.txt
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/d/dguttman/emmanuel/reproduce_analysis/7.snp_calling/java_after_align2good_contigs/combined/jSNPCalling_outlog.txt
+   Power=
+   
+
+sacct -j 1093065
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+1093065      jSNPCalli+ rrg-dgutt+ 1-00:00:05                        05:37.148 1-00:39:53      0:0 
+1093065.bat+      batch rrg-dgutt+ 1-00:00:06  39547688K  15874520K  05:37.147 1-00:39:53     0:15 
+1093065.ext+     extern rrg-dgutt+ 1-00:00:05    168876K      1276K   00:00:00   00:00:00      0:0 

@@ -1,0 +1,1 @@
+pyseer --lmm  --phenotypes resistances.pheno --pres gene_presence_absence.Rtab --similarity phylogeny_K.tsv --output-patterns snp_patterns.txt --cpu 8 --min-af 0.05 --max-af 0.98 > lmm.antibiotics.COG.txt
