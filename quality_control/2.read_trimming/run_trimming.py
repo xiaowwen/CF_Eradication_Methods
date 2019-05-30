@@ -9,7 +9,7 @@ script, path_to_paired_end_fasta_files, path_to_Trimmomatic_executable = argv
 # Define text handles
 
 filepath           = path_to_paired_end_fasta_files
-Trimmomatic        = path_to_kraken_executable
+Trimmomatic        = path_to_Trimmomatic_executable
 unique_prefix_seqs = utilities.isolate_folders(filepath)
 
 all_strings = []
