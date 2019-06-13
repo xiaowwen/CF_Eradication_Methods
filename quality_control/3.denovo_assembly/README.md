@@ -1,5 +1,5 @@
 This script creates submission file to run SPADEs denovo assembly for a set of
-trimmed paired end reads (assummed to end with _1P.fq.gz and _1P.fq.gz).
+trimmed paired end reads (assummed to end with _1P.fq.gz and _1U.fq.gz).
 
 Run:
 
